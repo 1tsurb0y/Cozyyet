@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap&text=0123456789"');
+
+
+@font-face {
+  font-family: 'crewniverse_font';
+  src: url(Fonts/crewniverse_font.ttf);
+}
+
+@font-face {
+  font-family: 'Lofi\ Lifestyle\ Demo';
+  src: url(Fonts/Lofi\ Lifestyle\ Demo.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand","Lofi\ Lifestyle\ Demo", sans-serif;
+  left: 100;
+}
+
+video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  right: 1;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+  transition: 0.5s ease-out;
+  font-family: "Dosis";
+}
+
+.input-box input::placeholder {
+  color: #fff;
+  font-family: "Lofi\ Lifestyle\ Demo";
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.input-box button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  filter: invert();
+}
+
+
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.input-box input:focus,
+.input-box input:hover{
+  border-color: #4070F4;
+  transition-duration: 0.5s;
+}
+
+/* The message box is shown when the user clicks on the password field */
+.message {
+  display: none;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  border-top: 2px solid rgba(255, 255, 255, .2);
+  border-right: 2px solid rgba(255, 255, 255, .2);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  position: absolute;
+  margin-top: -270px;
+  margin-left: 378px;
+  width: 340px;
+  
+}
+
+.message p {
+  padding: 1% 10px;
+  font-size: 16px;
+}
+
+.valid:before {
+  position: relative;
+  right: 5px;
+  bottom: -7px;
+  filter: invert();
+  content: url(check-regular-24.png);
+}
+
+.invalid:before {
+  position: relative;
+  right: 5px;
+  bottom: -7px;
+  content: url(x-regular-24.png);
+  filter: invert();
+}
+
+.input-box input[type="checkbox"]{
+ position:absolute;
+ width: 24px;
+ height: 24px;
+ right: 17px;
+ top: 50%;
+ transform: translateY(-50%);
+ font-size: 20px;
+ cursor: pointer;
+ opacity: 0%;
+ z-index: 1;
+}
+
+.input-box .checkmark{
+  position:absolute;
+  width: 24px;
+  height: 24px;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  content: url(lock-open-alt-regular-24.png);
+  filter: invert();
+}
+
+.input-box input[type="checkbox"]:hover ~ .checkmark{
+  content: url(show-alt-regular-24\ \(1\).png);
+}
+
+.input-box input[type="checkbox"]:checked ~ .checkmark{
+  content: url(hide-regular-24\ \(1\).png);
+}
+
+.input-box .checkmart{
+  position:absolute;
+  width: 24px;
+  height: 24px;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  content: url(lock-alt-regular-24.png);
+  filter: invert();
+}
+
+.input-box input[type="checkbox"]:hover ~ .checkmart{
+  content: url(show-alt-regular-24\ \(1\).png);
+}
+
+.input-box input[type="checkbox"]:checked ~ .checkmart{
+  content: url(hide-regular-24\ \(1\).png);
+}

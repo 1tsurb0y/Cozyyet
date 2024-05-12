@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>Cozy Yet?</title>
+</head>
+<body onload="showRandomNumber();">
+  <video src="lofi-cozy-house-rainy-night-moewalls-com.mp4" muted loop autoplay></video>
+  <section class="showcase">
+    <header>
+      <h2 class="logo"></h2>
+      <div class="toggle"></div>
+      <div class="tag">
+        <div class="Nuber" id="myNumber1"></div>
+        <div class="usertag">
+          <button class="user"></button>
+          <ul>
+            <li><i class='bx bx-user-circle' style='color:#ffffff'  ></i><video src="night-forest-river-desktop-wallpaperwaifu-com.mp4" autoplay loop></video>
+              <div class="number" id="myNumber2"></div></li>
+            <li class="st" id="use"><a href="Login.html">Login</a></li>
+            <li class="nd" id="use"><a href="Signup.html">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sS"></div>  
+    </header> 
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Cozy Yet?</h2>
+      <h3>Just relax Take a Nap and Get Cozy</h3>
+      <p>Get comfy</p>
+      <a href="#">Let's get cozy</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="https://twitter.com/CozyYet"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+    <div class="square"></div>
+    <div class="menu">
+      <hr class="line3">
+      <ul class="top">
+        <li class="option"><a href="#"><i class='bx bx-home-alt' style='color:#ffffff'  ></i>Home</a></li>
+        <li class="option"><a href="#"><i class='bx bx-library' style='color:#ffffff'  ></i>Library</a></li>
+        <li class="option"><a href="#"><i class='bx bxs-shopping-bags' style='color:#ffffff'  ></i>Shop</a></li>
+        <li><hr class="line1"></li>
+      </ul>
+      <ul class="bottom">
+        <li><hr class="line2"></li>
+        <li class="set"><a href=""><i class='bx bx-cog' style='color:#a09e9e'  ></i>Settings</a></li>
+        <li class="set"><a href=""><i class='bx bxs-contact' style='color:#cecaca'  ></i>Contact us</a></li>
+      </ul>
+      </div>
+    </div>
+  
+  </section>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+      const square = document.querySelector('.square');
+      const menu = document.querySelector('.menu');
+      const sSToggle = document.querySelector('.sS');
+      const squareS = document.querySelector('.squareS');
+      const overlay =document.querySelector('.overlay');
+      const sS = document.querySelector('.sS');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+        square.classList.toggle('active');
+        menu.classList.toggle('active');
+        sS.classList.toggle('active');
+
+      sSToggle.addEventListener('mouseover', () => {
+
+      sSToggle.addEventListener('mouseout', () => {
+      })})})
+  </script>
+  <script src="https://randojs.com/1.0.0.js"></script>
+    <script>
+      function rando(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+    
+      function showRandomNumber() {
+        var randomNumber = rando(10000000, 2000000);
+        
+        document.getElementById("myNumber1").innerHTML = "User|" + randomNumber;
+        document.getElementById("myNumber2").innerHTML = "#" + randomNumber;
+      }
+    </script>
+</body>
+</html>
